@@ -1,0 +1,109 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Hero CSS
+----------------------------------------*/
+.h9-hero {
+  min-height: 880px;
+  padding: 0;
+  @media #{$xxl, $xl, $lg, $md, $sm, $xs} {
+    padding: 0;
+  }
+  .hero-bg {
+    opacity: 1;
+    border-radius: 16px;
+    background-position: center center;
+    mix-blend-mode: normal;
+  }
+  &-content {
+    padding-top: 185px;
+    padding-bottom: 285px;
+  }
+  &-title {
+    font-size: 80px;
+    line-height: 1.05;
+    max-width: 507px;
+    margin-bottom: 20px;
+    span {
+      & > span {
+        display: inline-flex;
+        align-items: center;
+        transition: none;
+        & > span.image {
+          display: inline-flex;
+          align-items: center;
+          span,
+          img {
+            width: 55px;
+            height: 55px;
+            background-color: var(--tj-color-common-white);
+            padding: 2px;
+            border-radius: 50%;
+            line-height: 1;
+            margin-inline-start: -22px;
+          }
+          img {
+            &:first-child {
+              margin-inline-start: 0;
+            }
+          }
+          span {
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: unset;
+            padding: 0;
+            width: 53px;
+            height: 53px;
+            border: 2px solid var(--tj-color-common-white);
+            background-color: var(--tj-color-theme-dark);
+          }
+        }
+      }
+    }
+  }
+  &-img-area {
+    position: relative;
+    max-width: 684px;
+    margin-right: -50px;
+    .h9-hero-img {
+      height: 100%;
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      &.chart {
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 248px;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        bottom: 185px;
+      }
+    }
+  }
+}
+.h9-desc-area {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  gap: 20px;
+  flex-wrap: wrap;
+  .h9-desc-wrap {
+    max-width: 322px;
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+.h9-btn-wrap {
+  .tj-primary-btn {
+    background-color: var(--tj-color-grey-4);
+  }
+}
+/* !END: Hero CSS */

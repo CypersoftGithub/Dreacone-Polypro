@@ -1,0 +1,27 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Client CSS
+----------------------------------------*/
+.h9-faq {
+  &.h6-faq-section {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  &-shape-1,
+  &-shape-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &-shape-1 {
+    left: 0;
+  }
+  &-shape-2 {
+    right: 0;
+  }
+}
+
+/* !END: Client CSS */

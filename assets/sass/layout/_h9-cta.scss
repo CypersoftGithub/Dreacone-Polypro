@@ -1,0 +1,44 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: CTA CSS
+----------------------------------------*/
+.h9-cta {
+  &-section {
+    background-color: var(--tj-color-theme-primary);
+    .bg-img {
+      opacity: 1;
+      mix-blend-mode: difference;
+    }
+    .sec-heading {
+      max-width: 675px;
+      padding-top: 70px;
+      padding-bottom: 84px;
+    }
+    .sec-title {
+      margin-bottom: 26px;
+      color: var(--tj-color-theme-dark);
+    }
+    .cta-baner {
+      position: relative;
+      max-width: 595px;
+      width: 100%;
+      text-align: end;
+      margin-right: -40px;
+      .image-2 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+    }
+  }
+  &-btn-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+/* !END: CTA CSS */

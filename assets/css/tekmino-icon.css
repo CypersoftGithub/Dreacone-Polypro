@@ -1,0 +1,164 @@
+/* Font Awesome 6 Free Icons - Replacing tekmino-icon with Font Awesome */
+/* Include Font Awesome via CDN in HTML head: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> */
+
+[class^="tji-"],
+[class*=" tji-"] {
+    font-family: 'Font Awesome 6 Free' !important;
+    font-weight: 900 !important;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+}
+
+/* Arrows - All using FREE Font Awesome icons */
+.tji-arrow-up:before { content: "\f062"; } /* fa-arrow-up (FREE) */
+.tji-arrow-down:before { content: "\f063"; } /* fa-arrow-down (FREE) */
+.tji-arrow-left:before { content: "\f060"; } /* fa-arrow-left (FREE) */
+.tji-arrow-right:before { content: "\f061"; } /* fa-arrow-right (FREE) */
+.tji-arrow-up-2:before { content: "\f062"; } /* fa-arrow-up (FREE) */
+.tji-arrow-down-2:before { content: "\f063"; } /* fa-arrow-down (FREE) */
+.tji-arrow-left-2:before { content: "\f060"; } /* fa-arrow-left (FREE) */
+.tji-arrow-right-2:before { content: "\f054"; } /* fa-chevron-right (FREE) - Used in header - Better looking */
+.tji-arrow-up-3:before { content: "\f062"; } /* fa-arrow-up (FREE) */
+.tji-arrow-down-3:before { content: "\f063"; } /* fa-arrow-down (FREE) */
+.tji-arrow-left-3:before { content: "\f053"; } /* fa-chevron-left (FREE) - Used in carousels - Better looking */
+.tji-arrow-right-3:before { content: "\f054"; } /* fa-chevron-right (FREE) - Used in carousels - Better looking */
+.tji-arrow-up-4:before { content: "\f077"; } /* fa-chevron-up (FREE) - Used in back to top - Better looking */
+.tji-arrow-down-4:before { content: "\f063"; } /* fa-arrow-down (FREE) */
+.tji-arrow-left-4:before { content: "\f060"; } /* fa-arrow-left (FREE) */
+.tji-arrow-right-4:before { content: "\f054"; } /* fa-chevron-right (FREE) - Used in service cards - Better looking */
+.tji-arrow-up-5:before { content: "\f062"; } /* fa-arrow-up (FREE) */
+.tji-arrow-down-5:before { content: "\f063"; } /* fa-arrow-down (FREE) */
+.tji-arrow-left-5:before { content: "\f060"; } /* fa-arrow-left (FREE) */
+.tji-arrow-right-5:before { content: "\f061"; } /* fa-arrow-right (FREE) */
+.tji-arrow-long-up:before { content: "\f062"; } /* fa-arrow-up (FREE) */
+.tji-arrow-long-down:before { content: "\f063"; } /* fa-arrow-down (FREE) */
+.tji-arrow-long-left:before { content: "\f060"; } /* fa-arrow-left (FREE) */
+.tji-arrow-long-right:before { content: "\f061"; } /* fa-arrow-right (FREE) */
+.tji-arrow-bold-left:before { content: "\f060"; } /* fa-arrow-left (FREE) */
+.tji-arrow-bold-right:before { content: "\f061"; } /* fa-arrow-right (FREE) */
+
+/* Basic Icons */
+.tji-plus:before { content: "\f067"; } /* fa-plus */
+.tji-minus:before { content: "\f068"; } /* fa-minus */
+.tji-check:before { content: "\f00c"; } /* fa-check */
+.tji-check-2:before { content: "\f00c"; } /* fa-check */
+.tji-check-3:before { content: "\f00c"; } /* fa-check */
+.tji-check-4:before { content: "\f00c"; } /* fa-check */
+.tji-x-mark:before { content: "\f00d"; } /* fa-times */
+
+/* Navigation & UI */
+.tji-home:before { content: "\f015"; } /* fa-home */
+.tji-search:before { content: "\f002"; } /* fa-search */
+.tji-user:before { content: "\f007"; } /* fa-user */
+.tji-gear:before { content: "\f013"; } /* fa-gear */
+.tji-globe:before { content: "\f0ac"; } /* fa-globe */
+.tji-shield:before { content: "\f3ed"; } /* fa-shield-halved */
+.tji-clock:before { content: "\f017"; } /* fa-clock */
+.tji-clock-2:before { content: "\f017"; } /* fa-clock */
+.tji-calendar:before { content: "\f073"; } /* fa-calendar */
+.tji-bell:before { content: "\f0f3"; } /* fa-bell */
+.tji-bell-2:before { content: "\f0f3"; } /* fa-bell */
+
+/* Communication */
+.tji-phone:before { content: "\f095"; } /* fa-phone */
+.tji-phone-2:before { content: "\f095"; } /* fa-phone */
+.tji-phone-3:before { content: "\f095"; } /* fa-phone */
+.tji-envelop:before { content: "\f0e0"; } /* fa-envelope */
+.tji-envelop-2:before { content: "\f0e0"; } /* fa-envelope */
+.tji-chat:before { content: "\f075"; } /* fa-comments */
+.tji-comment:before { content: "\f075"; } /* fa-comments */
+.tji-location:before { content: "\f041"; } /* fa-map-marker */
+.tji-location-2:before { content: "\f041"; } /* fa-map-marker */
+.tji-share:before { content: "\f064"; } /* fa-share */
+
+/* Media & Playback */
+.tji-play:before { content: "\f04b"; } /* fa-play */
+
+/* Business & Services */
+.tji-computer:before { content: "\f109"; } /* fa-laptop */
+.tji-cloud:before { content: "\f0c2"; } /* fa-cloud */
+.tji-cloud-2:before { content: "\f0c2"; } /* fa-cloud */
+.tji-network:before { content: "\f6ff"; } /* fa-network-wired */
+.tji-development:before { content: "\f121"; } /* fa-code */
+.tji-consulting:before { content: "\f0c0"; } /* fa-users */
+.tji-cybersecurity:before { content: "\f3ed"; } /* fa-shield-halved */
+.tji-feather:before { content: "\f52d"; } /* fa-feather */
+.tji-water:before { content: "\f773"; } /* fa-water */
+.tji-recycle:before { content: "\f1b8"; } /* fa-recycle */
+.tji-palette:before { content: "\f53f"; } /* fa-palette */
+.tji-ruler-combined:before { content: "\f546"; } /* fa-ruler-combined */
+.tji-flask:before { content: "\f0c3"; } /* fa-flask */
+.tji-industry:before { content: "\f275"; } /* fa-industry */
+.tji-server:before { content: "\f233"; } /* fa-server */
+.tji-security:before { content: "\f3ed"; } /* fa-shield-halved */
+.tji-window:before { content: "\f2d0"; } /* fa-window-maximize */
+
+/* Charts & Analytics */
+.tji-chart:before { content: "\f200"; } /* fa-chart-line */
+.tji-chart-2:before { content: "\f200"; } /* fa-chart-line */
+.tji-speed-meter:before { content: "\f3fd"; } /* fa-gauge-high */
+.tji-growth:before { content: "\f201"; } /* fa-chart-line */
+.tji-percent:before { content: "\f295"; } /* fa-percent */
+.tji-budget:before { content: "\f155"; } /* fa-dollar-sign */
+
+/* Awards & Recognition */
+.tji-award:before { content: "\f559"; } /* fa-award */
+.tji-trophy:before { content: "\f091"; } /* fa-trophy */
+.tji-star:before { content: "\f005"; } /* fa-star */
+
+/* Actions & Gestures */
+.tji-hand:before { content: "\f256"; } /* fa-hand */
+.tji-hand-2:before { content: "\f256"; } /* fa-hand */
+.tji-thumbs-up:before { content: "\f164"; } /* fa-thumbs-up */
+.tji-idea:before { content: "\f0eb"; } /* fa-lightbulb */
+.tji-rocket:before { content: "\f135"; } /* fa-rocket */
+.tji-spark:before { content: "\f0eb"; } /* fa-lightbulb */
+.tji-trust:before { content: "\f023"; } /* fa-lock */
+.tji-download:before { content: "\f019"; } /* fa-download */
+
+/* Team & Organization */
+.tji-team:before { content: "\f0c0"; } /* fa-users */
+.tji-marquee:before { content: "\f0c0"; } /* fa-users */
+.tji-marquee-2:before { content: "\f0c0"; } /* fa-users */
+
+/* Travel & Transport */
+.tji-plane:before { content: "\f072"; } /* fa-plane */
+
+/* Quotes */
+.tji-quote:before { content: "\f10d"; } /* fa-quote-left */
+.tji-quote-2:before { content: "\f10e"; } /* fa-quote-right */
+
+/* Subtitles */
+.tji-subtitle:before { content: "\f1c0"; } /* fa-file-text */
+.tji-subtitle-2:before { content: "\f1c0"; } /* fa-file-text */
+.tji-subtitle-3:before { content: "\f1c0"; } /* fa-file-text */
+.tji-subtitle-4:before { content: "\f1c0"; } /* fa-file-text */
+.tji-subtitle-5:before { content: "\f1c0"; } /* fa-file-text */
+
+/* Social Media Icons */
+.tji-facebook:before { content: "\f09a"; } /* fa-facebook */
+.tji-linkedin:before { content: "\f08c"; } /* fa-linkedin */
+.tji-instagram:before { content: "\f16d"; } /* fa-instagram */
+.tji-x-twitter:before { content: "\f099"; } /* fa-twitter */
+.tji-youtube:before { content: "\f167"; } /* fa-youtube */
+.tji-pinterest:before { content: "\f0d2"; } /* fa-pinterest */
+.tji-tiktok:before { content: "\f167"; } /* fa-youtube (alternative) */
+.tji-whatsapp:before { content: "\f232"; } /* fa-whatsapp */
+.tji-telegram:before { content: "\f2c6"; } /* fa-telegram */
+.tji-messenger:before { content: "\f39f"; } /* fa-facebook-messenger */
+.tji-discord:before { content: "\f392"; } /* fa-discord */
+.tji-github:before { content: "\f09b"; } /* fa-github */
+.tji-dribble:before { content: "\f17d"; } /* fa-dribbble */
+.tji-vimeo:before { content: "\f27d"; } /* fa-vimeo */
+.tji-tumblr:before { content: "\f173"; } /* fa-tumblr */
+.tji-spotify:before { content: "\f1bc"; } /* fa-spotify */
+.tji-twitch:before { content: "\f1e8"; } /* fa-twitch */
+.tji-signal:before { content: "\f1eb"; } /* fa-wifi (alternative) */
+.tji-threads:before { content: "\f099"; } /* fa-twitter (alternative) */
+.tji-apple:before { content: "\f179"; } /* fa-apple */
+.tji-google:before { content: "\f1a0"; } /* fa-google */

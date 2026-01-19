@@ -1,0 +1,73 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Video CSS
+----------------------------------------*/
+.tj-features-section {
+  .tj_features_wrap.h9-video {
+    margin-top: -177px;
+  }
+
+  @media #{$md, $sm, $xs} {
+    .tj_features_wrap.h9-video {
+      margin-top: 0;
+    }
+  }
+}
+.h9-video {
+  display: block;
+  max-width: 405px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  &::before {
+    border-radius: 0 0 12px 0;
+  }
+  &::after {
+    border-radius: 0 0 0 16px;
+  }
+  .h9-video-item {
+    height: 168px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--tj-color-theme-primary);
+    .bg-img {
+      mix-blend-mode: luminosity;
+      z-index: 1;
+    }
+    .video-wrap {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .video-btn {
+      .video-icon {
+        font-size: 16px;
+        width: 52px;
+        height: 52px;
+        background: var(--tj-color-common-white);
+        @media #{$lg} {
+          width: 50px;
+          height: 50px;
+        }
+        @media #{$md,$sm,$xs} {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      &:hover {
+        .video-icon {
+          transform: scale(0.9);
+        }
+      }
+    }
+    .circle-ripple::before,
+    .circle-ripple::after {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+/* !END: Video CSS */
