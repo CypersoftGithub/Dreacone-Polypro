@@ -37,7 +37,7 @@ Contact map Js
 	-------------------------------------------- */
     $(window).on("load", function() {
         const tjPreloader = $(".preloader");
-        if (tjPreloader ? .length) {
+        if (tjPreloader && tjPreloader.length) {
             setTimeout(function() {
                 tjPreloader.removeClass("is-loading").addClass("is-loaded");
                 setTimeout(function() {
@@ -88,7 +88,7 @@ Contact map Js
     });
 
     /* --------------------------------------------
-		Mobile Menu & Hamburger / Header Menu (vanilla JS, after header injection)
+		Custom Mobile Menu (vanilla JS, after header injection)
 	-------------------------------------------- */
     let headerMenuInitialized = false;
 
@@ -96,52 +96,65 @@ Contact map Js
         if (headerMenuInitialized) return;
 
         const desktopMenu = document.querySelector(".mainmenu ul");
-        const mobileMenu = document.querySelector(".mobile_menu");
+        const mobileMenuList = document.querySelector(".mobile-menu-list");
+        const overlay = document.getElementById("mobileMenuOverlay");
+        const toggleButtons = document.querySelectorAll(".mobile-menu-toggle");
+        const closeButton = overlay ? overlay.querySelector(".mobile-menu-close") : null;
 
-        if (!desktopMenu || !mobileMenu) return;
+        if (!desktopMenu || !mobileMenuList || !overlay || !toggleButtons.length || !closeButton) {
+            return;
+        }
 
         headerMenuInitialized = true;
 
-        /* ===============================
-           Mobile Menu Clone
-        =============================== */
-        if (mobileMenu.children.length === 0) {
-            mobileMenu.innerHTML = desktopMenu.outerHTML;
+        // Clone desktop menu items into mobile list
+        if (!mobileMenuList.children.length) {
+            mobileMenuList.innerHTML = desktopMenu.innerHTML;
         }
 
-        /* ===============================
-           Mobile Menu Toggle (hamburger / offcanvas)
-        =============================== */
-        document.querySelectorAll(".menu_btn").forEach((btn) => {
+        const openMobileMenu = () => {
+            overlay.classList.add("open");
+            document.body.classList.add("mobile-menu-open");
+            toggleButtons.forEach((btn) => btn.classList.add("is-active"));
+        };
+
+        const closeMobileMenu = () => {
+            overlay.classList.remove("open");
+            document.body.classList.remove("mobile-menu-open");
+            toggleButtons.forEach((btn) => btn.classList.remove("is-active"));
+        };
+
+        // Open handlers
+        toggleButtons.forEach((btn) => {
             btn.addEventListener("click", function() {
-                document
-                    .querySelectorAll(".hamburger-area, .tj-offcanvas-area")
-                    .forEach((menu) => menu.classList.add("opened"));
+                if (overlay.classList.contains("open")) {
+                    closeMobileMenu();
+                } else {
+                    openMobileMenu();
+                }
             });
         });
 
-        document
-            .querySelectorAll(".hamburger_close_btn, .hamburger_bg")
-            .forEach((btn) => {
-                btn.addEventListener("click", function() {
-                    document
-                        .querySelectorAll(".hamburger-area, .tj-offcanvas-area")
-                        .forEach((menu) => menu.classList.remove("opened"));
-                });
-            });
+        // Close handlers
+        closeButton.addEventListener("click", closeMobileMenu);
+        overlay.addEventListener("click", function(e) {
+            if (e.target === overlay) {
+                closeMobileMenu();
+            }
+        });
 
-        /* ===============================
-           Dropdown (Mobile)
-        =============================== */
-        document
-            .querySelectorAll(".mobile_menu .has-dropdown > a")
+        // Mobile dropdown toggle
+        mobileMenuList
+            .querySelectorAll(".has-dropdown > a")
             .forEach((link) => {
                 link.addEventListener("click", function(e) {
-                    e.preventDefault();
                     const parentLi = this.parentElement;
-                    if (parentLi) {
-                        parentLi.classList.toggle("open");
-                    }
+                    if (!parentLi) return;
+                    const isDesktop = window.innerWidth >= 992;
+                    if (isDesktop) return; // don't override desktop behavior
+
+                    e.preventDefault();
+                    parentLi.classList.toggle("open");
                 });
             });
     }
@@ -151,7 +164,7 @@ Contact map Js
         initHeaderMenu();
     });
 
-    // Fallback: if header HTML is already present on DOM ready
+    // Fallback: if header HTML is already there on DOM ready
     document.addEventListener("DOMContentLoaded", function() {
         initHeaderMenu();
     });
@@ -648,7 +661,7 @@ Contact map Js
     const progressBarController = () => {
         const progressContainers = document.querySelectorAll(".tj-progress");
 
-        if (progressContainers ? .length) {
+        if (progressContainers && progressContainers.length) {
             progressContainers.forEach((progressContainer) => {
                 const targetedProgressBar = progressContainer.querySelector(".tj-progress-bar");
                 const completedPercent = parseInt(targetedProgressBar.getAttribute("data-percent", 10)) || 0;
@@ -848,7 +861,7 @@ Contact map Js
 	-------------------------------------------- */
     function getHoverActive() {
         const parentItems = document.querySelectorAll(".active-wrapper");
-        if (parentItems ? .length) {
+        if (parentItems && parentItems.length) {
             parentItems.forEach((parent) => {
                 parent.addEventListener(
                     "mouseenter",
@@ -869,7 +882,7 @@ Contact map Js
 		Contact map Js
 	-------------------------------------------- */
     const maps = document.querySelectorAll("#map");
-    if (maps ? .length) {
+    if (maps && maps.length) {
         // Initialize map
         const map = L.map("map", {
             center: [42.361145, -71.062133], // Boston example

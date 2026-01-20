@@ -158,35 +158,38 @@
                             <div class="col-lg-6">
                                 <div class="contact-form contact-form-3 tj-fade-anim">
                                     <h3 class="title">Feel Free Contact with Us!</h3>
-                                    <form id="contact-form">
+                                    <form id="contact-form" name="Contact_Us" method="POST" action="">
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="form-input">
-                                                    <input type="text" name="cfName" placeholder="Name*">
+                                                    <input type="text" name="Name" placeholder="Name*">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-input">
-                                                    <input type="email" name="cfEmail" placeholder="Email*">
+                                                    <input type="email" name="Email" placeholder="Email*">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-input">
-                                                    <input type="tel" name="cfPhone" placeholder="Phone*">
+                                                    <input type="tel" name="Phone" placeholder="Phone*">
                                                 </div>
                                             </div>
                                            
 
                                             <div class="col-sm-12">
                                                 <div class="form-input message-input">
-                                                    <textarea name="cfMessage" id="message" placeholder="Message*"></textarea>
+                                                    <textarea name="Message" id="message" placeholder="Message*"></textarea>
 
                                                 </div>
                                             </div>
                                             <div class="submit-btn">
-                                                <button class="tj-primary-btn" type="submit">
+                                                <button class="tj-primary-btn" type="submit" id="submit-btn">
                           <span class="btn-text"><span>Submit Now</span></span>
                           <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
+                          <span class="btn-loader" style="display: none;">
+                              <i class="fa fa-spinner fa-spin"></i>
+                          </span>
                         </button>
                                             </div>
                                         </div>
@@ -213,6 +216,61 @@
     </div>
 
     <!-- JS here -->
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+        
+            const form = e.target;
+            const submitBtn = document.getElementById("submit-btn");
+            const btnText = submitBtn.querySelector(".btn-text");
+            const btnIcon = submitBtn.querySelector(".btn-icon");
+            const btnLoader = submitBtn.querySelector(".btn-loader");
+            
+            // Disable button and show loader
+            submitBtn.disabled = true;
+            submitBtn.classList.add("loading");
+            btnText.style.display = "none";
+            btnIcon.style.display = "none";
+            btnLoader.style.display = "inline-flex";
+            
+            const formData = new FormData(form);
+        
+            fetch("https://script.google.com/macros/s/AKfycbwDGsVtv0jdFnc9pxjKJPDQKssx5ycw-lYEsalr2KbmjIUavqH4siPwQ1zWP7ArmUK13Q/exec", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(result => {
+                // Re-enable button and hide loader
+                submitBtn.disabled = false;
+                submitBtn.classList.remove("loading");
+                btnText.style.display = "";
+                btnIcon.style.display = "";
+                btnLoader.style.display = "none";
+                
+                if (result.trim() === "success") {
+                    alert("Message sent successfully!");
+                    form.reset();
+                } else {
+                    alert("Submission failed!");
+                }
+            })
+            .catch(error => {
+                console.error("Error!", error);
+                
+                // Re-enable button and hide loader
+                submitBtn.disabled = false;
+                submitBtn.classList.remove("loading");
+                btnText.style.display = "";
+                btnIcon.style.display = "";
+                btnLoader.style.display = "none";
+                
+                alert("Error submitting form");
+            });
+        });
+        </script>
+        
+        
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/gsap.min.js"></script>
