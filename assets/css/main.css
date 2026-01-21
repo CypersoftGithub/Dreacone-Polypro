@@ -761,7 +761,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .bottom-space-0 {
-    margin-bottom: -30px;
+    /* margin-bottom: -30px; */
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px),
@@ -20410,6 +20410,7 @@ START: Technologies CSS
     border-radius: 50%;
     object-fit: cover;
     animation: tj-rotate-reverse 50s infinite linear;
+    background-color: rgba(224, 29, 29, 0.685);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
