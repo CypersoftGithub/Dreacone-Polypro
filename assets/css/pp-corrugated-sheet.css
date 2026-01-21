@@ -1,0 +1,45 @@
+/* Page-only overrides: pp-corrugated-sheet.html
+   Goal: make product cards smaller/denser without affecting other pages. */
+
+/* Reduce overall card height */
+.pp-corrugated-sheet-page .project-item {
+  min-height: 280px;
+}
+
+/* Tighten content box */
+.pp-corrugated-sheet-page .project-item .project-content {
+  padding: 18px 18px 14px 18px;
+  width: calc(100% - 20px);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* Slightly smaller title */
+.pp-corrugated-sheet-page .project-item .title {
+  max-width: 150px;
+}
+
+/* Make the category pill smaller */
+.pp-corrugated-sheet-page .project-item .categories a {
+  font-size: 14px;
+  padding: 8px 14px;
+}
+
+/* Smaller icon button */
+.pp-corrugated-sheet-page .project-item .tj-icon-btn {
+  width: 54px;
+  height: 54px;
+}
+
+@media (max-width: 575px) {
+  .pp-corrugated-sheet-page .project-item {
+    min-height: 340px;
+  }
+  .pp-corrugated-sheet-page .project-item .project-content {
+    padding: 16px 14px 12px 14px;
+    width: calc(100% - 16px);
+    margin: 8px;
+  }
+}
+
+

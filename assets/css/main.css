@@ -54,6 +54,7 @@ START: Theme Default CSS
 ----------------------------------------*/
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
+
 :root {
     /**
      @Font-Family Declaration
@@ -627,6 +628,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
     .gap,
     .section-gap {
         padding-top: 100px;
@@ -637,6 +639,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
+
     .gap,
     .section-gap {
         padding-top: 70px;
@@ -651,6 +654,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
     .gap-2,
     .section-gap-2 {
         padding-top: 80px;
@@ -661,6 +665,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
+
     .gap-2,
     .section-gap-2 {
         padding-top: 60px;
@@ -674,6 +679,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
     .gap-top,
     .section-gap-top {
         padding-top: 100px;
@@ -683,6 +689,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
+
     .gap-top,
     .section-gap-top {
         padding-top: 70px;
@@ -695,6 +702,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
     .gap-bottom,
     .section-gap-bottom {
         padding-bottom: 100px;
@@ -704,6 +712,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
+
     .gap-bottom,
     .section-gap-bottom {
         padding-bottom: 70px;
@@ -1106,6 +1115,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -1394,6 +1404,163 @@ only screen and (min-width: 576px) and (max-width: 767px),
 Custom Mobile Menu (header.js / main.js)
 ---------------------------------------- */
 
+/* ----------------------------------------
+Google Translate (Header) - Theme Based
+---------------------------------------- */
+.header-translate {
+    margin-right: 14px;
+}
+
+/* Hide the "Select Language" label spacing */
+.header-translate .goog-te-gadget,
+.mobile-menu-header-translate .goog-te-gadget {
+    font-size: 0;
+}
+
+.header-translate .goog-te-gadget .goog-te-combo {
+    height: 40px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--tj-color-common-white);
+    outline: none;
+    cursor: pointer;
+}
+
+.header-translate .goog-te-gadget .goog-te-combo:hover {
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.header-translate .goog-te-gadget .goog-te-combo:focus-visible {
+    outline: 3px solid rgba(230, 58, 52, 0.35);
+    outline-offset: 3px;
+}
+
+.header-translate .goog-te-gadget .goog-te-combo option,
+.mobile-menu-header-translate .goog-te-gadget .goog-te-combo option {
+    color: #000;
+}
+
+/* Hide the Google top banner space if it appears */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+/* Removes extra top offset Google sometimes applies */
+body {
+    top: 0 !important;
+}
+
+/* Google Translate branding/overlay element (often shows as empty block) */
+.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+    display: none !important;
+}
+.VIpgJd-ZVi9od-l4eHX-hSRGPd{
+    display: none !important;
+}
+/* ----------------------------------------
+Google Translate (Mobile Menu) - Theme Based
+---------------------------------------- */
+.mobile-menu-header-translate {
+    padding: 12px 18px 0;
+}
+
+.mobile-menu-header-translate .goog-te-gadget .goog-te-combo {
+    width: 100%;
+    height: 42px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--tj-color-common-white);
+    outline: none;
+}
+
+.mobile-menu-header-translate .goog-te-gadget .goog-te-combo:focus-visible {
+    outline: 3px solid rgba(230, 58, 52, 0.35);
+    outline-offset: 3px;
+}
+
+/* ----------------------------------------
+Floating WhatsApp Button
+---------------------------------------- */
+.whatsapp-float {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 56px;
+    height: 56px;
+    border-radius: 999px;
+    background: #25D366;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.whatsapp-float i {
+    font-size: 28px;
+    line-height: 1;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.28);
+    background: #1fb85a;
+    color: #ffffff;
+}
+
+.whatsapp-float:focus-visible {
+    outline: 3px solid rgba(37, 211, 102, 0.45);
+    outline-offset: 4px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .whatsapp-float {
+        right: 16px;
+        bottom: 18px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+only screen and (min-width: 768px) and (max-width: 991px) {
+    .whatsapp-float {
+        right: 16px;
+        bottom: 16px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .whatsapp-float {
+        right: 14px;
+        bottom: 14px;
+        width: 54px;
+        height: 54px;
+    }
+
+    .whatsapp-float i {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 575px) {
+    .whatsapp-float {
+        right: 14px;
+        bottom: 16px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .whatsapp-float i {
+        font-size: 26px;
+    }
+}
+
 .mobile-menu-toggle {
     border: none;
     background: transparent;
@@ -1464,6 +1631,7 @@ Custom Mobile Menu (header.js / main.js)
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -1517,6 +1685,7 @@ Custom Mobile Menu (header.js / main.js)
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: translateX(0);
     }
@@ -1607,12 +1776,12 @@ Custom Mobile Menu (header.js / main.js)
     padding: 0;
 }
 
-.mobile-menu-list > li {
+.mobile-menu-list>li {
     border-bottom: 1px solid rgba(230, 58, 52, 0.15);
     position: relative;
 }
 
-.mobile-menu-list > li::before {
+.mobile-menu-list>li::before {
     content: "";
     position: absolute;
     left: 0;
@@ -1624,17 +1793,17 @@ Custom Mobile Menu (header.js / main.js)
     transition: opacity 0.3s ease;
 }
 
-.mobile-menu-list > li:hover::before,
-.mobile-menu-list > li.has-dropdown.open::before {
+.mobile-menu-list>li:hover::before,
+.mobile-menu-list>li.has-dropdown.open::before {
     opacity: 1;
     box-shadow: 0 0 10px rgba(230, 58, 52, 0.5);
 }
 
-.mobile-menu-list > li:last-child {
+.mobile-menu-list>li:last-child {
     border-bottom: none;
 }
 
-.mobile-menu-list > li > a {
+.mobile-menu-list>li>a {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1648,7 +1817,7 @@ Custom Mobile Menu (header.js / main.js)
     background: transparent;
 }
 
-.mobile-menu-list > li > a::before {
+.mobile-menu-list>li>a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -1659,17 +1828,17 @@ Custom Mobile Menu (header.js / main.js)
     transition: width 0.3s ease;
 }
 
-.mobile-menu-list > li > a:hover {
+.mobile-menu-list>li>a:hover {
     color: var(--tj-color-theme-primary);
     padding-left: 28px;
     text-shadow: 0 0 8px rgba(230, 58, 52, 0.3);
 }
 
-.mobile-menu-list > li > a:hover::before {
+.mobile-menu-list>li>a:hover::before {
     width: 100%;
 }
 
-.mobile-menu-list .has-dropdown > a::after {
+.mobile-menu-list .has-dropdown>a::after {
     content: "\f078";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -1688,7 +1857,7 @@ Custom Mobile Menu (header.js / main.js)
     border: 1px solid rgba(230, 58, 52, 0.3);
 }
 
-.mobile-menu-list .has-dropdown.open > a::after {
+.mobile-menu-list .has-dropdown.open>a::after {
     transform: rotate(180deg);
     color: var(--tj-color-common-white);
     background: var(--tj-color-theme-primary);
@@ -1696,7 +1865,7 @@ Custom Mobile Menu (header.js / main.js)
     box-shadow: 0 0 10px rgba(230, 58, 52, 0.5);
 }
 
-.mobile-menu-list .has-dropdown > .sub-menu {
+.mobile-menu-list .has-dropdown>.sub-menu {
     display: none;
     background: linear-gradient(90deg, rgba(230, 58, 52, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%);
     border-top: 1px solid rgba(230, 58, 52, 0.2);
@@ -1706,7 +1875,7 @@ Custom Mobile Menu (header.js / main.js)
     position: relative;
 }
 
-.mobile-menu-list .has-dropdown > .sub-menu::before {
+.mobile-menu-list .has-dropdown>.sub-menu::before {
     content: "";
     position: absolute;
     left: 20px;
@@ -1717,7 +1886,7 @@ Custom Mobile Menu (header.js / main.js)
     opacity: 0.3;
 }
 
-.mobile-menu-list .has-dropdown.open > .sub-menu {
+.mobile-menu-list .has-dropdown.open>.sub-menu {
     display: block;
     animation: slideDown 0.3s ease-out;
 }
@@ -1728,6 +1897,7 @@ Custom Mobile Menu (header.js / main.js)
         max-height: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         max-height: 500px;
@@ -1735,12 +1905,12 @@ Custom Mobile Menu (header.js / main.js)
     }
 }
 
-.mobile-menu-list .has-dropdown > .sub-menu > li {
+.mobile-menu-list .has-dropdown>.sub-menu>li {
     border-bottom: 1px solid rgba(230, 58, 52, 0.1);
     position: relative;
 }
 
-.mobile-menu-list .has-dropdown > .sub-menu > li::before {
+.mobile-menu-list .has-dropdown>.sub-menu>li::before {
     content: "";
     position: absolute;
     left: 20px;
@@ -1754,16 +1924,16 @@ Custom Mobile Menu (header.js / main.js)
     transition: opacity 0.3s ease;
 }
 
-.mobile-menu-list .has-dropdown > .sub-menu > li:hover::before {
+.mobile-menu-list .has-dropdown>.sub-menu>li:hover::before {
     opacity: 1;
     box-shadow: 0 0 6px rgba(230, 58, 52, 0.6);
 }
 
-.mobile-menu-list .has-dropdown > .sub-menu > li:last-child {
+.mobile-menu-list .has-dropdown>.sub-menu>li:last-child {
     border-bottom: none;
 }
 
-.mobile-menu-list .has-dropdown > .sub-menu > li > a {
+.mobile-menu-list .has-dropdown>.sub-menu>li>a {
     display: block;
     padding: 14px 20px 14px 48px;
     color: var(--tj-color-text-body);
@@ -1774,7 +1944,7 @@ Custom Mobile Menu (header.js / main.js)
     position: relative;
 }
 
-.mobile-menu-list .has-dropdown > .sub-menu > li > a:hover {
+.mobile-menu-list .has-dropdown>.sub-menu>li>a:hover {
     color: var(--tj-color-theme-primary);
     padding-left: 52px;
     background: linear-gradient(90deg, rgba(230, 58, 52, 0.15) 0%, transparent 100%);
@@ -2587,6 +2757,7 @@ START: Theme Footer CSS
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
+
     .tj-footer-section::after,
     .tj-footer-section::before {
         width: 300px;
@@ -2703,6 +2874,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
+
     .footer-widget .wp-block-heading,
     .footer-widget .wp-block-search__label,
     .footer-widget .wp-block-categories__label,
@@ -2827,10 +2999,12 @@ only screen and (min-width: 576px) and (max-width: 767px),
         min-height: 64px;
         padding: 16px 62px 16px 20px;
     }
+
     .footer-widget.subscription_widget .subscribe_form button[type=submit],
     .footer-widget.subscription_widget .subscribe_form input[type=submit] {
         width: 54px;
     }
+
     .footer-widget.subscription_widget .download_buttons {
         margin-top: 20px;
     }
@@ -3016,6 +3190,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
     .footer-2 .footer_widget_wrapper .footer-widget {
         max-width: calc(50% - 15px);
         width: 100%;
@@ -3044,9 +3219,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .footer-2 .copyright-text {
         order: 1;
     }
+
     .footer-2 .copyright-menu {
         order: 2;
     }
+
     .footer-2 .footer_socials {
         order: 3;
     }
@@ -3152,6 +3329,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
     .footer-3 .footer_widget_wrapper .footer-widget {
         max-width: calc(50% - 15px);
         width: 100%;
@@ -3180,9 +3358,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .footer-3 .copyright-text {
         order: 1;
     }
+
     .footer-3 .copyright-menu {
         order: 2;
     }
+
     .footer-3 .footer_socials {
         order: 3;
     }
@@ -4106,6 +4286,7 @@ START: Preloader CSS
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -4119,7 +4300,7 @@ START: Back to top CSS
 
 .back-to-top-wrapper {
     position: fixed;
-    right: 60px;
+    right: 18px;
     bottom: 0;
     display: block;
     border-radius: 50%;
@@ -4132,21 +4313,21 @@ START: Back to top CSS
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .back-to-top-wrapper {
-        right: 45px;
+        right: 16px;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
     .back-to-top-wrapper {
-        right: 15px;
+        right: 14px;
     }
 }
 
 .back-to-top-btn-show {
     visibility: visible;
     opacity: 1;
-    bottom: 60px;
+    bottom: 88px;
 }
 
 .back-to-top-btn-show:hover {
@@ -4160,22 +4341,21 @@ START: Back to top CSS
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .back-to-top-btn-show {
-        right: 50px;
+        bottom: 84px;
     }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
 only screen and (min-width: 768px) and (max-width: 991px) {
     .back-to-top-btn-show {
-        right: 30px;
-        bottom: 30px;
+        bottom: 82px;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
     .back-to-top-btn-show {
-        bottom: 25px;
+        bottom: 76px;
     }
 }
 
@@ -5186,9 +5366,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
         align-items: flex-start;
         gap: 24px;
     }
+
     .tj-banner-section-2 .banner-content .banner-title {
         max-width: 100%;
     }
+
     .tj-banner-section-2 .banner-img-area {
         max-width: 100%;
         margin: 0 auto -260px;
@@ -5201,18 +5383,22 @@ only screen and (min-width: 576px) and (max-width: 767px),
         margin-bottom: 320px;
         padding-top: 120px;
     }
+
     .tj-banner-section-2 .banner-content {
         padding-inline: 40px;
     }
+
     .tj-banner-section-2 .banner-content .banner-title {
         max-width: 900px;
         font-size: 90px;
     }
+
     .tj-banner-section-2 .banner-img-area {
         max-width: 1680px;
         margin: 0 auto -380px;
         padding-top: 120px;
     }
+
     .tj-banner-section-2 .circle-text-wrap.award-circle {
         right: 22%;
         top: 10px;
@@ -5440,10 +5626,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
         top: 20px;
         right: 20%;
     }
+
     .tj-banner-section-2 .circle-text-wrap.award-circle .circle-text {
         width: 130px;
         height: 130px;
     }
+
     .tj-banner-section-2 .circle-text-wrap.award-circle .circle-icon span {
         width: 70px;
         height: 70px;
@@ -5464,10 +5652,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
         height: 115px;
         right: 50px;
     }
+
     .tj-banner-section-2 .circle-text-wrap.award-circle .circle-text {
         width: 95px;
         height: 95px;
     }
+
     .tj-banner-section-2 .circle-text-wrap.award-circle .circle-icon span {
         width: 50px;
         height: 50px;
@@ -5679,6 +5869,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .client-content {
         max-width: 300px;
     }
+
     .client-content .sec-title {
         font-size: 16px;
     }
@@ -5704,6 +5895,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
 only screen and (min-width: 992px) and (max-width: 1199px) {
+
     .client-slider::before,
     .client-slider::after {
         width: 300px;
@@ -5712,6 +5904,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px) {
+
     .client-slider::before,
     .client-slider::after {
         width: 200px;
@@ -5719,6 +5912,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 @media (max-width: 575px) {
+
     .client-slider::before,
     .client-slider::after {
         width: 100px;
@@ -6299,6 +6493,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     .circle-text-wrap.award-circle .circle-icon {
         font-size: 32px;
     }
+
     .circle-text-wrap.award-circle .circle-icon span {
         width: 70px;
         height: 70px;
@@ -6309,6 +6504,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     .circle-text-wrap.award-circle .circle-icon {
         font-size: 26px;
     }
+
     .circle-text-wrap.award-circle .circle-icon span {
         width: 50px;
         height: 50px;
@@ -6347,6 +6543,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
         width: 120px;
         height: 120px;
     }
+
     .circle-text-wrap.about-btn .circle-text {
         width: 85%;
         height: 85%;
@@ -6366,9 +6563,11 @@ only screen and (min-width: 576px) and (max-width: 767px) {
         margin: 0 auto;
         padding-inline: 30px;
     }
+
     .tj-about-section-2 .about-left {
         max-width: 980px;
     }
+
     .tj-about-section-2 .about-content-area {
         padding: 120px 60px 0 60px;
     }
@@ -6381,9 +6580,11 @@ only screen and (min-width: 576px) and (max-width: 767px) {
         margin: 0 auto;
         padding-inline: 24px;
     }
+
     .tj-about-section-2 .about-left {
         max-width: 100%;
     }
+
     .tj-about-section-2 .about-content-area {
         padding: 70px 24px 30px;
     }
@@ -6394,6 +6595,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
+
     .tj-about-section-2 .col-xxl-7,
     .tj-about-section-2 .col-xxl-5 {
         width: 50%;
@@ -6447,6 +6649,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         padding: 15px 0;
         border-radius: 16px;
     }
+
     .tj-about-section-2 .about-left::before,
     .tj-about-section-2 .about-left::after {
         display: none;
@@ -6720,6 +6923,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .about_reviews {
         font-size: 13px;
     }
+
     .about_reviews .text {
         max-width: 158px;
     }
@@ -6828,6 +7032,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
+
     .content_right_inner .desc,
     .content_right_inner .list_button {
         margin-left: 0;
@@ -7319,6 +7524,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .service_list_item .item_content {
         gap: 50px;
     }
+
     .service_list_item .service_reveal_img {
         inset-inline-start: 25%;
         width: 300px;
@@ -7330,9 +7536,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .service_list_item .item_content {
         gap: 30px;
     }
+
     .service_list_item .item_content .content_inner {
         max-width: 475px;
     }
+
     .service_list_item .service_reveal_img {
         inset-inline-start: 23%;
         width: 240px;
@@ -7344,9 +7552,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .service_list_item .item_content {
         gap: 30px;
     }
+
     .service_list_item .item_content .content_inner {
         max-width: 475px;
     }
+
     .service_list_item .service_reveal_img {
         display: none;
     }
@@ -7357,25 +7567,31 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .service_list_item {
         padding: 25px 0;
     }
+
     .service_list_item .item_count {
         width: 40px;
         height: 70px;
         font-size: 40px;
     }
+
     .service_list_item .item_count span {
         margin-left: -10px;
     }
+
     .service_list_item .item_content {
         width: calc(100% - 60px);
         flex-direction: column;
         gap: 30px;
     }
+
     .service_list_item .item_content .content_inner {
         max-width: 100%;
     }
+
     .service_list_item .item_content .content_inner .desc {
         margin-top: 10px;
     }
+
     .service_list_item .service_reveal_img {
         display: none;
     }
@@ -7455,6 +7671,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     .services_tabs {
         column-gap: 0;
     }
+
     .services_tabs .service_tab_item {
         padding: 15px 14px;
     }
@@ -7466,10 +7683,12 @@ only screen and (min-width: 576px) and (max-width: 767px) {
         column-gap: 0;
         justify-content: start;
     }
+
     .services_tabs .service_tab_item {
         padding: 15px 14px;
         font-size: 14px;
     }
+
     .services_tabs .service_tab_item span:not(.button_inner) {
         width: 20px;
         height: 20px;
@@ -7568,6 +7787,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
         max-width: 425px;
         padding-left: 20px;
     }
+
     .service_content_wrap .service_image {
         max-width: 420px;
         height: 400px;
@@ -7581,6 +7801,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         max-width: 410px;
         padding: 25px 15px;
     }
+
     .service_content_wrap .service_image {
         max-width: 420px;
         height: 400px;
@@ -7594,14 +7815,17 @@ only screen and (min-width: 576px) and (max-width: 767px),
         align-items: start;
         gap: 0;
     }
+
     .service_content_wrap .service_content {
         padding: 25px 15px 40px 15px;
     }
+
     .service_content_wrap .service_content .service_icon {
         width: 70px;
         height: 70px;
         font-size: 35px;
     }
+
     .service_content_wrap .service_image {
         max-width: 100%;
         height: auto;
@@ -7614,6 +7838,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         max-width: 100%;
         padding: 25px 5px 40px 5px;
     }
+
     .service_content_wrap .service_content .service_icon {
         width: 60px;
         height: 60px;
@@ -7766,6 +7991,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     from {
         transform: translate(-50%, -50%) scale(1);
     }
+
     to {
         transform: translate(-50%, -50%) scale(0.9);
     }
@@ -8009,9 +8235,11 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
         height: 80px;
         font-size: 35px;
     }
+
     .marquee-item-2 .marquee-icon svg {
         max-width: 35px;
     }
+
     .marquee-item-2 .marquee-text {
         font-size: 80px;
     }
@@ -8023,9 +8251,11 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
         height: 75px;
         font-size: 30px;
     }
+
     .marquee-item-2 .marquee-icon svg {
         max-width: 30px;
     }
+
     .marquee-item-2 .marquee-text {
         font-size: 75px;
     }
@@ -8037,9 +8267,11 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
         height: 60px;
         font-size: 25px;
     }
+
     .marquee-item-2 .marquee-icon svg {
         max-width: 25px;
     }
+
     .marquee-item-2 .marquee-text {
         font-size: 60px;
     }
@@ -8051,9 +8283,11 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
         height: 50px;
         font-size: 20px;
     }
+
     .marquee-item-2 .marquee-icon svg {
         max-width: 20px;
     }
+
     .marquee-item-2 .marquee-text {
         font-size: 50px;
     }
@@ -8178,6 +8412,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(calc(-100% - var(--gap)));
     }
@@ -8187,6 +8422,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(calc(100% + var(--gap)));
     }
@@ -8285,6 +8521,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
     .technologies-item-wrap::after,
     .technologies-item-wrap::before {
         width: 200px;
@@ -8292,6 +8529,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     .technologies-item-wrap::after,
     .technologies-item-wrap::before {
         width: 100px;
@@ -8299,6 +8537,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media (max-width: 575px) {
+
     .technologies-item-wrap::after,
     .technologies-item-wrap::before {
         display: none;
@@ -8497,7 +8736,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 .project-img img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     transition: transform 0.5s;
     transform-origin: center center;
     transform: perspective(0) rotateX(0) rotateY(0) scaleX(1) scaleY(1);
@@ -8682,6 +8921,7 @@ START: Testimonial CSS
         padding-top: 340px;
         padding-bottom: 100px;
     }
+
     .tj-testimonial-section-4 {
         padding-top: 100px;
     }
@@ -8695,6 +8935,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         padding-bottom: 70px;
         border-radius: 12px;
     }
+
     .tj-testimonial-section-4 {
         padding-top: 70px;
     }
@@ -8975,6 +9216,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     .testimonial_item_2 {
         max-width: 940px;
     }
+
     .testimonial_item_2 .testimonial_content .desc {
         font-size: 20px;
     }
@@ -8984,18 +9226,23 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     .testimonial_item_2 {
         max-width: 850px;
     }
+
     .testimonial_item_2 .testimonial_thumb {
         max-width: 330px;
     }
+
     .testimonial_item_2 .testimonial_content {
         width: calc(100% - 330px);
     }
+
     .testimonial_item_2 .testimonial_content .star-ratings {
         margin-bottom: 30px;
     }
+
     .testimonial_item_2 .testimonial_content .desc {
         font-size: 20px;
     }
+
     .testimonial_item_2 .testimonial_content .author_info {
         margin-top: 25px;
         padding-top: 25px;
@@ -9006,19 +9253,24 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     .testimonial_item_2 {
         max-width: 650px;
     }
+
     .testimonial_item_2 .testimonial_thumb {
         max-width: 230px;
     }
+
     .testimonial_item_2 .testimonial_content {
         width: calc(100% - 230px);
         padding: 5px 5px 5px 20px;
     }
+
     .testimonial_item_2 .testimonial_content .star-ratings {
         margin-bottom: 20px;
     }
+
     .testimonial_item_2 .testimonial_content .desc {
         font-size: 16px;
     }
+
     .testimonial_item_2 .testimonial_content .author_info {
         margin-top: 20px;
         padding-top: 20px;
@@ -9029,19 +9281,24 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     .testimonial_item_2 {
         max-width: 500px;
     }
+
     .testimonial_item_2 .testimonial_thumb {
         max-width: 230px;
     }
+
     .testimonial_item_2 .testimonial_content {
         width: calc(100% - 230px);
         padding: 5px 5px 5px 20px;
     }
+
     .testimonial_item_2 .testimonial_content .star-ratings {
         margin-bottom: 20px;
     }
+
     .testimonial_item_2 .testimonial_content .desc {
         font-size: 16px;
     }
+
     .testimonial_item_2 .testimonial_content .author_info {
         margin-top: 20px;
         padding-top: 20px;
@@ -9052,19 +9309,24 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     .testimonial_item_2 {
         max-width: 350px;
     }
+
     .testimonial_item_2 .testimonial_thumb {
         max-width: 100%;
     }
+
     .testimonial_item_2 .testimonial_content {
         width: 100%;
         padding: 20px 0 5px 0;
     }
+
     .testimonial_item_2 .testimonial_content .star-ratings {
         margin-bottom: 20px;
     }
+
     .testimonial_item_2 .testimonial_content .desc {
         font-size: 16px;
     }
+
     .testimonial_item_2 .testimonial_content .author_info {
         margin-top: 20px;
         padding-top: 20px;
@@ -9214,6 +9476,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     .testimonial_item_3 {
         padding: 36px 15px 35px;
     }
+
     .testimonial_item_3 .testimonial_content .author_info {
         margin-top: 20px;
     }
@@ -9285,6 +9548,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
+
     .slider-next,
     .slider-prev {
         width: 40px;
@@ -9446,12 +9710,15 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .accordion_item {
         padding: 0 20px;
     }
+
     .accordion_title {
         padding: 20px 45px 20px 0;
     }
+
     .accordion_title::after {
         top: 17px;
     }
+
     .accordion_content {
         padding: 20px 0;
     }
@@ -9463,6 +9730,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         padding: 20px 40px 20px 0;
         font-size: 18px;
     }
+
     .accordion_title::after {
         top: 16px;
     }
@@ -9680,9 +9948,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .tj_accordion_2 .accordion_title {
         padding: 20px 55px 20px 20px;
     }
+
     .tj_accordion_2 .accordion_title::after {
         inset-inline-end: 20px;
     }
+
     .tj_accordion_2 .accordion_content {
         padding: 20px;
     }
@@ -10125,6 +10395,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .tj_blog_wrap {
         grid-template-columns: 1fr;
     }
+
     .tj_blog_wrap .blog-item:first-child {
         grid-row: auto;
     }
@@ -10134,6 +10405,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .tj_blog_wrap .blog-item:first-child .blog-thumb {
         height: 300px;
     }
+
     .tj_blog_wrap .blog-item:first-child .blog-content .title {
         font-size: 25px;
         line-height: 1.333;
@@ -10144,28 +10416,35 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .tj_blog_wrap .blog-item:first-child .blog-thumb {
         height: 270px;
     }
+
     .tj_blog_wrap .blog-item:first-child .blog-content {
         padding: 25px 5px 5px 10px;
     }
+
     .tj_blog_wrap .blog-item:first-child .blog-content .title {
         font-size: 20px;
         line-height: 1.333;
     }
+
     .tj_blog_wrap .blog-item:not(:first-child) {
         flex-direction: column;
         align-items: start;
     }
+
     .tj_blog_wrap .blog-item:not(:first-child) .blog-thumb {
         height: 270px;
         width: 100%;
     }
+
     .tj_blog_wrap .blog-item:not(:first-child) .blog-content {
         width: 100%;
         padding: 25px 5px 5px 10px;
     }
+
     .tj_blog_wrap .blog-item:not(:first-child) .blog-content .blog-meta {
         margin-bottom: 18px;
     }
+
     .tj_blog_wrap .blog-item:not(:first-child) .blog-content .tj-text-btn {
         margin-top: 23px;
     }
@@ -10240,6 +10519,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         width: 100%;
         height: 480px;
     }
+
     .tj_blog_wrap_2 .blog-item:first-child .blog-content {
         padding: 20px 15px 15px 15px;
         width: 100%;
@@ -10250,14 +10530,17 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .tj_blog_wrap_2 .blog-item:first-child .blog-thumb {
         height: 300px;
     }
+
     .tj_blog_wrap_2 .blog-item:first-child .blog-content .title {
         font-size: 25px;
         line-height: 1.333;
     }
+
     .tj_blog_wrap_2 .blog-item:not(:first-child) .blog-thumb {
         width: 200px;
         height: 210px;
     }
+
     .tj_blog_wrap_2 .blog-item:not(:first-child) .blog-content {
         width: calc(100% - 200px);
         padding: 15px;
@@ -10269,28 +10552,35 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .tj_blog_wrap .blog-item:first-child .blog-thumb {
         height: 270px;
     }
+
     .tj_blog_wrap .blog-item:first-child .blog-content {
         padding: 25px 5px 15px 5px;
     }
+
     .tj_blog_wrap .blog-item:first-child .blog-content .title {
         font-size: 20px;
         line-height: 1.333;
     }
+
     .tj_blog_wrap .blog-item:not(:first-child) {
         flex-direction: column;
         align-items: start;
     }
+
     .tj_blog_wrap .blog-item:not(:first-child) .blog-thumb {
         height: 270px;
         width: 100%;
     }
+
     .tj_blog_wrap .blog-item:not(:first-child) .blog-content {
         width: 100%;
         padding: 25px 5px 15px 5px;
     }
+
     .tj_blog_wrap .blog-item:not(:first-child) .blog-content .blog-meta {
         margin-bottom: 18px;
     }
+
     .tj_blog_wrap .blog-item:not(:first-child) .blog-content .tj-text-btn {
         margin-top: 22px;
     }
@@ -10745,6 +11035,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media (max-width: 575px) {
+
     .subscribe-form.cta-form [type=submit],
     .subscribe-form.cta-form input[type=submit] {
         padding: 5px;
@@ -10753,10 +11044,12 @@ only screen and (min-width: 576px) and (max-width: 767px),
         background-color: transparent;
         border: 0;
     }
+
     .subscribe-form.cta-form [type=submit] .btn-text,
     .subscribe-form.cta-form input[type=submit] .btn-text {
         display: none;
     }
+
     .subscribe-form.cta-form [type=submit] .btn-icon::before,
     .subscribe-form.cta-form input[type=submit] .btn-icon::before {
         width: 42px;
@@ -11002,17 +11295,20 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     .funfact-3 {
         flex-wrap: wrap;
     }
+
     .funfact-3 .countup-item {
         max-width: 50%;
     }
+
     .funfact-3 .countup-item:nth-child(2n)::after,
     .funfact-3 .countup-item:nth-child(2n)::before {
         display: none;
         inset-inline-end: auto;
         border-inline-end: 0;
     }
+
     .funfact-3 .countup-item:not(:last-child,
-    :nth-last-child(2)) {
+        :nth-last-child(2)) {
         border-bottom: 1px solid var(--tj-color-border-1);
     }
 }
@@ -11021,9 +11317,11 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     .funfact-3 {
         flex-wrap: wrap;
     }
+
     .funfact-3 .countup-item {
         max-width: 100%;
     }
+
     .funfact-3 .countup-item:not(:last-child)::after {
         display: block;
         width: 100%;
@@ -11034,6 +11332,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
         bottom: 0;
         transform: translateY(50%);
     }
+
     .funfact-3 .countup-item:not(:last-child)::before {
         inset-inline-end: 50%;
         top: auto;
@@ -11116,6 +11415,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         margin-inline-start: auto;
         margin-inline-end: auto;
     }
+
     .process-item:first-child {
         margin-top: 0;
     }
@@ -11364,10 +11664,12 @@ only screen and (min-width: 576px) and (max-width: 767px) {
         inset-inline-start: 50%;
         top: -55px;
     }
+
     .process-item-2::before {
         inset-inline-start: 50%;
         top: -55px;
     }
+
     .process-item-2 .process-step {
         inset-inline-start: 50%;
         top: -50px;
@@ -11378,9 +11680,11 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     .process-border-2 {
         inset-inline-start: -50px;
     }
+
     .process-item-2::before {
         inset-inline-start: -50px;
     }
+
     .process-item-2 .process-step {
         inset-inline-start: -50px;
     }
@@ -11637,6 +11941,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
+
     .contact-form .form-input textarea,
     .contact-form .form-input select,
     .contact-form .form-input .nice-select,
@@ -11990,9 +12295,7 @@ START: Theme Slider CSS
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px),
 only screen and (min-width: 1200px) and (max-width: 1399px) {
-    .tj-hero-slider .slider_navigation {
-        /* margin-inline-start: 70px; */
-    }
+    /* no-op: keep breakpoint for future tweaks */
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -12002,6 +12305,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .tj-hero-slider .slider_navigation {
         margin-top: -100px;
     }
+
     .tj-hero-slider .slider_navigation .slider-prev,
     .tj-hero-slider .slider_navigation .slider-next {
         width: 50px;
@@ -12256,15 +12560,15 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
         padding-top: 130px;
         padding-bottom: 130px;
     }
-    .tj_slider_item .slider_content {
-        /* margin-inline-start: 70px; */
-    }
+
+    /* no-op: keep breakpoint for future tweaks */
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .tj_slider_item .slider_content {
         max-width: 575px;
     }
+
     .tj_slider_item .slider_content .title {
         font-size: 80px;
     }
@@ -12276,10 +12580,12 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
         padding-top: 120px;
         padding-bottom: 120px;
     }
+
     .tj_slider_item .slider_content {
         max-width: 500px;
         margin-inline-start: 70px;
     }
+
     .tj_slider_item .slider_content .title {
         font-size: 70px;
     }
@@ -12291,12 +12597,15 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
         padding-top: 130px;
         padding-bottom: 130px;
     }
+
     .tj_slider_item .slider_content {
         max-width: 450px;
     }
+
     .tj_slider_item .slider_content .title {
         font-size: 60px;
     }
+
     .tj_slider_item .slider_content .desc {
         font-size: 16px;
     }
@@ -12309,13 +12618,16 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
         padding-top: 130px;
         padding-bottom: 130px;
     }
+
     .tj_slider_item .slider_content {
         max-width: 425px;
         margin-inline-start: 0;
     }
+
     .tj_slider_item .slider_content .title {
         font-size: 56px;
     }
+
     .tj_slider_item .slider_content .desc {
         font-size: 16px;
     }
@@ -12325,6 +12637,7 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
     .tj_slider_item .slider_content {
         max-width: 360px;
     }
+
     .tj_slider_item .slider_content .title {
         font-size: 46px;
     }
@@ -12378,6 +12691,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         padding: 15px 0 0 0;
         gap: 15px;
     }
+
     .tj_features_wrap .feature_item {
         max-width: calc(50% - 8px);
     }
@@ -12389,6 +12703,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         padding: 15px 0 0 0;
         gap: 15px;
     }
+
     .tj_features_wrap .feature_item {
         max-width: 100%;
     }
@@ -12454,9 +12769,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
         height: 60px;
         font-size: 30px;
     }
+
     .feature_item .feature_icon svg {
         max-width: 30px;
     }
+
     .feature_item .feature_content {
         width: calc(100% - 75px);
     }
@@ -12965,6 +13282,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         flex: 1 1 100%;
         border-right: 0;
     }
+
     .team-details__experience__list ul li:nth-last-child(2) {
         border-bottom: 1px solid var(--tj-color-border-1);
     }
@@ -13930,6 +14248,7 @@ blockquote p {
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
+
     .wp-block-quote p,
     blockquote p {
         font-size: 20px;
@@ -13961,6 +14280,7 @@ blockquote cite::before {
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
+
     .wp-block-quote,
     blockquote {
         padding: 25px 15px;
@@ -14231,6 +14551,7 @@ blockquote cite::before {
     .tj-latest-comments ul .tj-comment .comment-content {
         flex-direction: column;
     }
+
     .tj-latest-comments ul .tj-comment .comment-content .comment-avatar {
         margin-inline-end: auto;
     }
@@ -14406,6 +14727,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
+
     .tj-sidebar-widget .wp-block-heading,
     .tj-sidebar-widget .wp-block-search__label,
     .tj-sidebar-widget .wp-block-categories__label,
@@ -14593,6 +14915,19 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .tj-sidebar-widget.widget-categories ul li a:hover span {
+    color: var(--tj-color-theme-dark);
+}
+
+/* Active state for sidebar category filter (used on pp-corrugated-sheet.html) */
+.tj-sidebar-widget.widget-categories ul li a.is-active {
+    color: var(--tj-color-theme-dark);
+}
+
+.tj-sidebar-widget.widget-categories ul li a.is-active::before {
+    width: 100%;
+}
+
+.tj-sidebar-widget.widget-categories ul li a.is-active span {
     color: var(--tj-color-theme-dark);
 }
 
@@ -15144,6 +15479,7 @@ START: Animate CSS
     0% {
         transform: translateY(-100%);
     }
+
     100% {
         transform: translateY(0%);
     }
@@ -15153,6 +15489,7 @@ START: Animate CSS
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(0.8);
     }
@@ -15162,6 +15499,7 @@ START: Animate CSS
     0% {
         box-shadow: 0 0 0 0 rgb(211, 237, 49);
     }
+
     100% {
         box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
     }
@@ -15171,6 +15509,7 @@ START: Animate CSS
     0% {
         box-shadow: 0 0 0 0 rgb(255, 255, 255);
     }
+
     100% {
         box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
     }
@@ -15180,6 +15519,7 @@ START: Animate CSS
     0% {
         box-shadow: 0 0 0 0 rgba(230, 58, 52, 0.5);
     }
+
     100% {
         box-shadow: 0 0 0 16px rgba(230, 58, 52, 0);
     }
@@ -15189,15 +15529,19 @@ START: Animate CSS
     0% {
         transform: translateY(2px);
     }
+
     25% {
         transform: translateY(5px);
     }
+
     50% {
         transform: translateY(-6px);
     }
+
     75% {
         transform: translateY(5px);
     }
+
     100% {
         transform: translateY(2px);
     }
@@ -15207,10 +15551,12 @@ START: Animate CSS
     0% {
         width: 100%;
     }
+
     50% {
         width: 0;
         right: 0;
     }
+
     100% {
         width: 100%;
         left: 0;
@@ -15221,6 +15567,7 @@ START: Animate CSS
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
     }
+
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
     }
@@ -15231,6 +15578,7 @@ START: Animate CSS
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -15241,22 +15589,27 @@ START: Animate CSS
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(-360deg);
     }
 }
 
 @keyframes gelatine {
+
     from,
     to {
         transform: scale(1, 1);
     }
+
     25% {
         transform: scale(0.7, 1.1);
     }
+
     50% {
         transform: scale(1.1, 0.7);
     }
+
     75% {
         transform: scale(0.95, 1.05);
     }
@@ -15266,9 +15619,11 @@ START: Animate CSS
     0% {
         transform: translate(-50%, -50%) scale(0.8);
     }
+
     60% {
         opacity: 1;
     }
+
     100% {
         transform: translate(-50%, -50%) scale(1.5);
         opacity: 0;
@@ -15279,9 +15634,11 @@ START: Animate CSS
     0% {
         transform: translate(-50%, -50%) scale(0.8);
     }
+
     60% {
         opacity: 1;
     }
+
     100% {
         transform: translate(-50%, -50%) scale(1.5);
         opacity: 0;
@@ -15292,9 +15649,11 @@ START: Animate CSS
     0% {
         transform: translate(-50%, -50%) scale(0.8);
     }
+
     60% {
         opacity: 1;
     }
+
     100% {
         transform: translate(-50%, -50%) scale(1.5);
         opacity: 0;
@@ -15305,27 +15664,35 @@ START: Animate CSS
     0% {
         transform: rotate(0);
     }
+
     10% {
         transform: rotate(5deg);
     }
+
     20% {
         transform: rotate(-5deg);
     }
+
     30% {
         transform: rotate(4deg);
     }
+
     40% {
         transform: rotate(-4deg);
     }
+
     50% {
         transform: rotate(2deg);
     }
+
     60% {
         transform: rotate(-2deg);
     }
+
     70% {
         transform: rotate(1deg);
     }
+
     80%,
     90%,
     100% {
@@ -15337,6 +15704,7 @@ START: Animate CSS
     0% {
         transform: skewX(-25deg) translateX(0);
     }
+
     100% {
         transform: skewX(-25deg) translateX(250%);
     }
@@ -15350,15 +15718,19 @@ START: Animate CSS
     0% {
         transform: translateY(0);
     }
+
     25% {
         transform: translateY(-15px);
     }
+
     50% {
         transform: translateY(0);
     }
+
     75% {
         transform: translateY(-15px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -15372,15 +15744,19 @@ START: Animate CSS
     0% {
         transform: translateX(0);
     }
+
     25% {
         transform: translateX(-15px);
     }
+
     50% {
         transform: translateX(0);
     }
+
     75% {
         transform: translateX(-15px);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -15394,15 +15770,19 @@ START: Animate CSS
     0% {
         transform: translateY(0);
     }
+
     25% {
         transform: translateY(-5px);
     }
+
     50% {
         transform: translateY(0);
     }
+
     75% {
         transform: translateY(-5px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -15416,9 +15796,11 @@ START: Animate CSS
     0% {
         transform: scale(0.9);
     }
+
     50% {
         transform: scale(1.2);
     }
+
     100% {
         transform: scale(0.9);
     }
@@ -15428,9 +15810,11 @@ START: Animate CSS
     0% {
         transform: scale(0.9);
     }
+
     50% {
         transform: scale(1.2);
     }
+
     100% {
         transform: scale(0.9);
     }
@@ -15440,9 +15824,11 @@ START: Animate CSS
     0% {
         transform: scale(0.9);
     }
+
     50% {
         transform: scale(1.2);
     }
+
     100% {
         transform: scale(0.9);
     }
@@ -15456,9 +15842,11 @@ START: Animate CSS
     0% {
         transform: scale(0.9);
     }
+
     50% {
         transform: scale(1);
     }
+
     100% {
         transform: scale(0.9);
     }
@@ -15468,9 +15856,11 @@ START: Animate CSS
     0% {
         transform: scale(0.9);
     }
+
     50% {
         transform: scale(1);
     }
+
     100% {
         transform: scale(0.9);
     }
@@ -15480,9 +15870,11 @@ START: Animate CSS
     0% {
         transform: scale(0.9);
     }
+
     50% {
         transform: scale(1);
     }
+
     100% {
         transform: scale(0.9);
     }
@@ -15496,6 +15888,7 @@ START: Animate CSS
     0% {
         transform: scale(0.8);
     }
+
     100% {
         transform: scale(1);
     }
@@ -15505,6 +15898,7 @@ START: Animate CSS
     0% {
         transform: scale(0.8);
     }
+
     100% {
         transform: scale(1);
     }
@@ -15514,6 +15908,7 @@ START: Animate CSS
     0% {
         transform: scale(0.8);
     }
+
     100% {
         transform: scale(1);
     }
@@ -15523,9 +15918,11 @@ START: Animate CSS
     0% {
         top: 100%;
     }
+
     50% {
         top: 0%;
     }
+
     100% {
         top: 100%;
     }
@@ -15535,9 +15932,11 @@ START: Animate CSS
     0% {
         top: 0%;
     }
+
     50% {
         top: 100%;
     }
+
     100% {
         top: 0%;
     }
@@ -15547,9 +15946,11 @@ START: Animate CSS
     0% {
         left: 0;
     }
+
     50% {
         left: 95%;
     }
+
     100% {
         left: 0;
     }
@@ -15559,6 +15960,7 @@ START: Animate CSS
     from {
         transform: rotateY(0deg);
     }
+
     to {
         transform: rotateY(360deg);
     }
@@ -15589,10 +15991,12 @@ START: Animate CSS
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.3);
         opacity: 1;
     }
+
     100% {
         transform: scale(1.6);
         opacity: 0;
@@ -16588,6 +16992,7 @@ START: Technologies CSS
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
+
     .h4-technologies-section .technologies-right,
     .h4-technologies-section .technologies-left {
         width: 100%;
@@ -16845,6 +17250,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px) {
+
     .testimonial-wrapper-3 .quote-icon::after,
     .testimonial-wrapper-3 .quote-icon::before {
         bottom: 17px;
@@ -16852,6 +17258,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 @media (max-width: 575px) {
+
     .testimonial-wrapper-3 .quote-icon::after,
     .testimonial-wrapper-3 .quote-icon::before {
         bottom: 8px;
@@ -17090,6 +17497,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .h4-cta-section .subscribe-form.cta-form [type=submit] .btn-icon i {
         color: var(--tj-color-theme-dark);
     }
+
     .h4-cta-section .subscribe-form.cta-form [type=submit] .btn-icon::before {
         background-color: var(--tj-color-theme-primary);
     }
@@ -17343,9 +17751,11 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     .footer-5 .copyright-text {
         order: 1;
     }
+
     .footer-5 .copyright-menu {
         order: 3;
     }
+
     .footer-5 .footer_socials {
         order: 2;
     }
@@ -18249,6 +18659,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
         width: 50%;
         --gap: 20px;
     }
+
     .testimonial-wrapper-4 .scroll-slider:last-child {
         display: none;
     }
@@ -18259,6 +18670,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
         width: 100%;
         --gap: 20px;
     }
+
     .testimonial-wrapper-4 .scroll-slider:not(:first-child) {
         display: none;
     }
@@ -18331,6 +18743,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     from {
         transform: translateY(0);
     }
+
     to {
         transform: translateY(calc(-100% - var(--gap)));
     }
@@ -18340,6 +18753,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     from {
         transform: translateY(0);
     }
+
     to {
         transform: translateY(calc(100% + var(--gap)));
     }
@@ -18451,6 +18865,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         overflow: hidden;
         padding-bottom: 4px;
     }
+
     .pricing-box,
     .pricing-box:first-child,
     .pricing-box:last-child,
@@ -18612,6 +19027,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         justify-content: space-between;
         min-height: auto;
     }
+
     .pricing-box .features div span:first-child {
         display: block;
     }
@@ -18733,9 +19149,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
         border-top-width: 1px;
         border-radius: 10px;
     }
+
     .pricing-box.popular .pricing-header {
         padding-top: 24px;
     }
+
     .pricing-box.popular .features div {
         border-color: var(--tj-color-border-1);
     }
@@ -19088,6 +19506,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
     .header-area.header-6.header-absolute .mainmenu>ul>li.menu-item-has-children>a::after,
     .header-area.header-6.header-absolute .mainmenu>ul>li.has-dropdown>a::after {
         top: 36%;
@@ -19320,12 +19739,15 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .h6-hero .hero-orbit {
         max-width: 1265px;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(2) {
         inset-inline-start: 24%;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(3) {
         inset-inline-end: 19%;
     }
+
     .h6-hero .hero-chart-wrapper {
         max-width: 1235px;
     }
@@ -19335,18 +19757,22 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .h6-hero .hero-orbit {
         max-width: 1064px;
     }
+
     .h6-hero .hero-orbit-icon-wrapper {
         height: 446px;
         inset-inline-start: -25px;
         inset-inline-end: -27px;
         top: 48px;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(2) {
         inset-inline-start: 34%;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(3) {
         inset-inline-end: 25%;
     }
+
     .h6-hero .hero-chart-wrapper {
         max-width: 1100px;
     }
@@ -19356,26 +19782,32 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .h6-hero .banner-title {
         font-size: 58px;
     }
+
     .h6-hero .banner-title span>span>span:has(img) img {
         margin-inline-start: -19px;
         width: 53px;
         height: 53px;
     }
+
     .h6-hero .hero-orbit {
         max-width: 870px;
     }
+
     .h6-hero .hero-orbit-icon-wrapper {
         height: 400px;
         inset-inline-start: -25px;
         inset-inline-end: -27px;
         top: 48px;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(2) {
         inset-inline-start: 19%;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(3) {
         inset-inline-end: 12%;
     }
+
     .h6-hero .hero-chart-wrapper {
         gap: 15px;
     }
@@ -19386,30 +19818,37 @@ only screen and (min-width: 576px) and (max-width: 767px),
         min-height: 870px;
         padding-top: 158px;
     }
+
     .h6-hero .banner-title {
         font-size: 48px;
     }
+
     .h6-hero .banner-title span>span>span:has(img) img {
         margin-inline-start: -15px;
         width: 45px;
         height: 45px;
     }
+
     .h6-hero .hero-orbit {
         max-width: 657px;
     }
+
     .h6-hero .hero-orbit-icon-wrapper {
         height: 348px;
         inset-inline-start: -25px;
         inset-inline-end: -27px;
         top: 10px;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(2) {
         inset-inline-start: 12%;
         bottom: 16%;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(3) {
         inset-inline-end: 12%;
     }
+
     .h6-hero .hero-chart-wrapper {
         gap: 15px;
     }
@@ -19420,54 +19859,68 @@ only screen and (min-width: 576px) and (max-width: 767px),
         min-height: 870px;
         padding-top: 158px;
     }
+
     .h6-hero .banner-title {
         font-size: 45px;
     }
+
     .h6-hero .banner-title span>span>span:has(img) img {
         margin-inline-start: -10px;
         width: 45px;
         height: 45px;
     }
+
     .h6-hero .hero-orbit {
         max-width: 657px;
     }
+
     .h6-hero .hero-orbit-icon {
         width: 40px;
     }
+
     .h6-hero .hero-orbit-icon-wrapper {
         height: 284px;
         inset-inline-start: 0;
         inset-inline-end: 0;
         top: 10px;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(1) {
         top: 9px;
         inset-inline-start: 7%;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(2) {
         inset-inline-start: 5%;
         bottom: 0;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(3) {
         inset-inline-end: 6%;
         bottom: 0;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(4) {
         inset-inline-end: 7%;
     }
+
     .h6-hero .hero-chart-wrapper {
         flex-wrap: wrap;
         gap: 15px;
     }
+
     .h6-hero .hero-chart-img {
         width: 100%;
     }
+
     .h6-hero .hero-chart-img img {
         width: 100%;
     }
+
     .h6-hero .hero-chart-img:nth-child(2) {
         order: 3;
     }
+
     .h6-hero .hero-chart-img:nth-child(3) {
         order: 2;
     }
@@ -19478,54 +19931,68 @@ only screen and (min-width: 576px) and (max-width: 767px),
         min-height: 870px;
         padding-top: 158px;
     }
+
     .h6-hero .banner-title {
         font-size: 36px;
     }
+
     .h6-hero .banner-title span>span>span:has(img) img {
         margin-inline-start: -10px;
         width: 38px;
         height: 38px;
     }
+
     .h6-hero .hero-orbit {
         max-width: 657px;
     }
+
     .h6-hero .hero-orbit-icon {
         width: 40px;
     }
+
     .h6-hero .hero-orbit-icon-wrapper {
         height: 410px;
         inset-inline-start: 0;
         inset-inline-end: 0;
         top: 10px;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(1) {
         top: 9px;
         inset-inline-start: 5%;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(2) {
         inset-inline-start: 5%;
         bottom: 0;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(3) {
         inset-inline-end: 6%;
         bottom: 0;
     }
+
     .h6-hero .hero-orbit-icon:nth-child(4) {
         inset-inline-end: 6%;
     }
+
     .h6-hero .hero-chart-wrapper {
         flex-wrap: wrap;
         gap: 15px;
     }
+
     .h6-hero .hero-chart-img {
         width: 100%;
     }
+
     .h6-hero .hero-chart-img img {
         width: 100%;
     }
+
     .h6-hero .hero-chart-img:nth-child(2) {
         order: 3;
     }
+
     .h6-hero .hero-chart-img:nth-child(3) {
         order: 2;
     }
@@ -19613,16 +20080,20 @@ START: insights CSS
     .insights-wrapper {
         gap: 20px;
     }
+
     .insights-box {
         padding: 30px 30px 0;
     }
+
     .insights-box .desc {
         margin-bottom: 40px;
     }
+
     .insights-box:nth-child(1),
     .insights-box:nth-child(4) {
         width: calc(55% - 10px);
     }
+
     .insights-box:nth-child(2),
     .insights-box:nth-child(3) {
         width: calc(45% - 10px);
@@ -19634,13 +20105,16 @@ START: insights CSS
     .insights-box {
         padding: 35px 24px 0;
     }
+
     .insights-box .desc {
         margin-bottom: 40px;
     }
+
     .insights-box:nth-child(1),
     .insights-box:nth-child(4) {
         width: 100%;
     }
+
     .insights-box:nth-child(2),
     .insights-box:nth-child(3) {
         width: 100%;
@@ -19823,6 +20297,7 @@ START: Technologies CSS
     .h6-technologies-section {
         min-height: 580px;
     }
+
     .h6-technologies-section .sec-heading-centered {
         max-width: 440px;
     }
@@ -19834,6 +20309,7 @@ START: Technologies CSS
         min-height: auto;
         padding-bottom: 0;
     }
+
     .h6-technologies-section .desc {
         font-size: 16px;
     }
@@ -19963,6 +20439,7 @@ START: Technologies CSS
     from {
         -webkit-transform: rotate(0deg);
     }
+
     to {
         -webkit-transform: rotate(359deg);
     }
@@ -19972,6 +20449,7 @@ START: Technologies CSS
     from {
         -webkit-transform: rotate(359deg);
     }
+
     to {
         -webkit-transform: rotate(0deg);
     }
@@ -20627,6 +21105,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
         max-width: 100%;
         gap: 15px;
     }
+
     .h7-hero .banner-img-area .banner-img {
         max-width: calc(61.9% - 7.5px);
     }
@@ -20636,6 +21115,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
     .h7-hero .banner-img-area {
         margin-top: 100px;
     }
+
     .h7-hero .banner-img-area .banner-img {
         max-width: calc(55% - 7.5px);
     }
@@ -20647,6 +21127,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .h7-hero .banner-img-area {
         margin-top: 70px;
     }
+
     .h7-hero .banner-img-area .banner-img {
         max-width: 100%;
     }
@@ -20680,6 +21161,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         height: 90px;
         width: 110px;
     }
+
     .h7-hero .title-img-2 {
         width: 75px;
     }
@@ -20690,12 +21172,15 @@ only screen and (min-width: 576px) and (max-width: 767px),
         height: 67px;
         width: 80px;
     }
+
     .h7-hero .title-img-1 img {
         margin-inline-start: 1px;
     }
+
     .h7-hero .title-img-2 {
         width: 55px;
     }
+
     .h7-hero .title-img-2 img {
         margin-top: -12px;
     }
@@ -20707,9 +21192,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
         height: 50px;
         width: 50px;
     }
+
     .h7-hero .title-img-2 {
         width: 40px;
     }
+
     .h7-hero .title-img-2 img {
         margin-top: -6px;
     }
@@ -21042,6 +21529,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     .h7-about-content .about-funfact .inline-content {
         font-size: 64px;
     }
+
     .h7-about-content .about-funfact .inline-content .count-plus {
         font-size: 42px;
     }
@@ -21052,6 +21540,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     .h7-about-content .about-funfact .inline-content {
         font-size: 54px;
     }
+
     .h7-about-content .about-funfact .inline-content .count-plus {
         font-size: 38px;
     }
@@ -21078,6 +21567,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .h7-about-content .about-funfact {
         gap: 20px;
     }
+
     .h7-about-content .about-funfact .countup-item {
         max-width: 100%;
     }
@@ -21198,9 +21688,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
         inset-inline-start: 15px;
         bottom: 15px;
     }
+
     .h7-about .about-badge-icon {
         margin-bottom: 14px;
     }
+
     .h7-about .about-badge-icon i {
         font-size: 50px;
         color: var(--tj-color-theme-dark);
@@ -21524,6 +22016,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
         padding-inline-start: 0;
         width: 100%;
     }
+
     .pricing_items_wrap_3 .pricing_features::before {
         display: none;
     }
@@ -21876,6 +22369,7 @@ START: Blog CSS
         flex-direction: column;
         border: 1px solid var(--tj-color-border-1);
     }
+
     .blog-item-2:not(:last-child) {
         margin-bottom: 20px;
     }
@@ -21927,6 +22421,7 @@ START: Blog CSS
         top: 25px;
         inset-inline-start: 10px;
     }
+
     .blog-item-2 .blog-date .date {
         font-size: 36px;
     }
@@ -22338,6 +22833,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media (max-width: 575px) {
+
     .tj-h8-banner-subscribe .subscribe-form.cta-form [type=submit] .btn-icon::before,
     .tj-h8-banner-subscribe .subscribe-form.cta-form input[type=submit] .btn-icon::before {
         background-color: var(--tj-color-theme-primary);
@@ -22350,6 +22846,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media (max-width: 575px) {
+
     .tj-h8-banner-subscribe .subscribe-form.cta-form [type=submit] .btn-icon i,
     .tj-h8-banner-subscribe .subscribe-form.cta-form input[type=submit] .btn-icon i {
         color: var(--tj-color-theme-dark);
@@ -23571,6 +24068,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
     .header-area.header-9.header-absolute .mainmenu>ul>li.menu-item-has-children>a,
     .header-area.header-9.header-absolute .mainmenu>ul>li.has-dropdown>a {
         padding-inline-end: 26px;
@@ -23584,6 +24082,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
     .header-area.header-9.header-absolute .mainmenu>ul>li.menu-item-has-children>a::after,
     .header-area.header-9.header-absolute .mainmenu>ul>li.has-dropdown>a::after {
         top: 36%;
@@ -23935,9 +24434,11 @@ START: insights CSS
     .h9-insights .insights-wrapper {
         gap: 20px;
     }
+
     .h9-insights .insights-box {
         padding: 30px;
     }
+
     .h9-insights .insights-box .desc {
         margin-bottom: 0;
     }
@@ -23948,9 +24449,11 @@ START: insights CSS
     .h9-insights .insights-box {
         padding: 30px;
     }
+
     .h9-insights .insights-box .desc {
         margin-bottom: 0;
     }
+
     .h9-insights .insights-box:nth-child(1),
     .h9-insights .insights-box:nth-child(2),
     .h9-insights .insights-box:nth-child(3) {
@@ -24184,13 +24687,13 @@ START: Export Table CSS
         background-color: var(--tj-color-theme-bg);
         border: 1px solid var(--tj-color-border-1);
     }
-    
+
     .table {
         margin-bottom: 0;
         background-color: transparent;
         color: var(--tj-color-text-body);
     }
-    
+
     .table thead th {
         background: linear-gradient(135deg, var(--tj-color-theme-primary) 0%, #c92a24 100%);
         color: var(--tj-color-common-white);
@@ -24202,14 +24705,14 @@ START: Export Table CSS
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
-    
+
     .table thead th h4 {
         margin: 0;
         color: var(--tj-color-common-white);
         font-size: var(--tj-fs-h5);
         font-weight: var(--tj-fw-bold);
     }
-    
+
     .table tbody td {
         padding: 18px 15px;
         vertical-align: middle;
@@ -24217,47 +24720,48 @@ START: Export Table CSS
         color: var(--tj-color-text-body);
         font-size: var(--tj-fs-body);
     }
-    
+
     .table tbody td strong {
         color: var(--tj-color-heading-primary);
         font-weight: var(--tj-fw-sbold);
         display: inline-block;
         min-width: 180px;
     }
-    
+
     .table tbody tr {
         transition: all 0.3s ease;
     }
-    
+
     .table tbody tr:nth-child(even) {
         background-color: rgba(255, 255, 255, 0.02);
     }
-    
+
     .table tbody tr:hover {
         background-color: rgba(230, 58, 52, 0.1);
         transform: translateX(5px);
     }
-    
+
     .table-bordered {
         border: 1px solid var(--tj-color-border-1);
     }
-    
+
     .table-bordered td,
     .table-bordered th {
         border: 1px solid var(--tj-color-border-1);
     }
-    
+
     .table-striped tbody tr:nth-of-type(odd) {
         background-color: rgba(0, 0, 0, 0.05);
     }
-    
+
     @media (max-width: 767px) {
+
         .table thead th,
         .table tbody td {
             padding: 12px 10px;
             font-size: 14px;
         }
-        
+
         .table tbody td strong {
             min-width: auto;
             display: block;
@@ -24265,6 +24769,7 @@ START: Export Table CSS
         }
     }
 }
+
 /* !END: Export Table CSS */
 
 /*# sourceMappingURL=main.css.map */

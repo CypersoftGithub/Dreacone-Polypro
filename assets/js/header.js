@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             <!-- header right info -->
                             <div class="header-right-item d-flex align-items-center justify-content-end">
                                 <div class="header-button d-none d-lg-block">
-                                    <a class="tj-primary-btn" href="contact.html">
-                                        <span class="btn-text"><span>Contact Us</span></span>
+                                    <a class="tj-primary-btn" href="https://drive.google.com/file/d/1wyqgv_Ymn7QLmqMN8PVORkxkQfEPvwnh/view?usp=drive_link">
+                                        <span class="btn-text"><span> Catalogue</span></span>
                                         <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
                                     </a>
                                 </div>
@@ -89,9 +89,17 @@ document.addEventListener('DOMContentLoaded', function () {
                     </svg>
                 </button>
             </div>
+           
             <nav class="mobile-menu-nav">
                 <ul class="mobile-menu-list"></ul>
+                
             </nav>
+            <div class="header-button " style="text-align: center;">
+                                    <a class="tj-primary-btn" href="https://drive.google.com/file/d/1wyqgv_Ymn7QLmqMN8PVORkxkQfEPvwnh/view?usp=drive_link">
+                                        <span class="btn-text"><span>Download Catalogue</span></span>
+                                        <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
+                                    </a>
+                                </div>
            
         </div>
     </div>
@@ -142,8 +150,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             <!-- header right info -->
                             <div class="header-right-item d-flex align-items-center justify-content-end">
                                 <div class="header-button d-none d-lg-block">
-                                    <a class="tj-primary-btn" href="contact.html">
-                                        <span class="btn-text"><span>Contact Us</span></span>
+                                    <a class="tj-primary-btn" href="https://drive.google.com/file/d/1wyqgv_Ymn7QLmqMN8PVORkxkQfEPvwnh/view?usp=drive_link">
+                                        <span class="btn-text"><span> Catalogue</span></span>
                                         <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
                                     </a>
                                 </div>
@@ -168,6 +176,70 @@ document.addEventListener('DOMContentLoaded', function () {
   // Notify other scripts (like main.js) that the header has been injected
   var headerEvent = new Event('headerLoaded');
   document.dispatchEvent(headerEvent);
+
+  // Load + init Google Translate (only once per page)
+  if (!window.__dreaconeTranslateLoaded) {
+    window.__dreaconeTranslateLoaded = true;
+
+    // This callback is called by Google's script
+    window.googleTranslateElementInit = function () {
+      if (window.google && window.google.translate && window.google.translate.TranslateElement) {
+        try {
+          new window.google.translate.TranslateElement(
+            { pageLanguage: 'en', autoDisplay: false },
+            'google_translate_element'
+          );
+        } catch (e) {}
+        try {
+          new window.google.translate.TranslateElement(
+            { pageLanguage: 'en', autoDisplay: false },
+            'google_translate_element_sticky'
+          );
+        } catch (e) {}
+        try {
+          new window.google.translate.TranslateElement(
+            { pageLanguage: 'en', autoDisplay: false },
+            'google_translate_element_mobile'
+          );
+        } catch (e) {}
+      }
+
+      // If Google rendered only the first widget before sticky shows,
+      // clone its markup into the sticky + mobile targets once available.
+      var syncTranslate = function () {
+        var src = document.querySelector('#google_translate_element .goog-te-gadget');
+        var stickyTarget = document.getElementById('google_translate_element_sticky');
+        var mobileTarget = document.getElementById('google_translate_element_mobile');
+
+        if (!src || !(stickyTarget || mobileTarget)) return false;
+
+        var html = src.innerHTML;
+        if (stickyTarget && !stickyTarget.innerHTML.trim()) {
+          stickyTarget.innerHTML = html;
+        }
+        if (mobileTarget && !mobileTarget.innerHTML.trim()) {
+          mobileTarget.innerHTML = html;
+        }
+        return true;
+      };
+
+      // Poll briefly until the first widget is ready, then copy once.
+      var attempts = 0;
+      var maxAttempts = 10;
+      var poll = setInterval(function () {
+        attempts++;
+        if (syncTranslate() || attempts >= maxAttempts) {
+          clearInterval(poll);
+        }
+      }, 300);
+    };
+
+    // Inject Google's translate script
+    var s = document.createElement('script');
+    s.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    s.async = true;
+    document.body.appendChild(s);
+  }
 });
 
 

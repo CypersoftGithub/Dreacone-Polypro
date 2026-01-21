@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                         <span>Ground Survey No.32 Paiki 1, Paiki 2, Dreacone Polypro, Morbi, Gujarat, India.</span>
                                     </div>
                                     <div class="contact-item">
-                                        <a href="tel:7041099052">Phone: <br> +91 70410 99052</a>
+                                        <a href="tel:7041099052">Phone: <br>Tejash Bhai +91 70410 99052</a>
                                         <a href="mailto:Dreaconepolypro@gmail.com">Email: <br> Dreaconepolypro@gmail.com</a>
                                     </div>
                                 </div>
