@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <li><a href="about.html">About Us</a></li>
 
     <li class="has-dropdown">
-        <a href="products.html">Products</a>
+        <a href="#">Products</a>
         <ul class="sub-menu">
             <li>
                 <a href="pp-corrugated-sheet.html">
@@ -49,9 +49,14 @@ document.addEventListener('DOMContentLoaded', function () {
 </ul>
                                 </nav>
                             </div>
+                            
+                          
 
                             <!-- header right info -->
                             <div class="header-right-item d-flex align-items-center justify-content-end">
+                            <div class="header-translate d-none d-lg-block">
+                                <div id="google_translate_element"></div>
+                            </div>
                                 <div class="header-button d-none d-lg-block">
                                     <a class="tj-primary-btn" href="https://drive.google.com/file/d/1wyqgv_Ymn7QLmqMN8PVORkxkQfEPvwnh/view?usp=drive_link">
                                         <span class="btn-text"><span> Catalogue</span></span>
@@ -92,14 +97,16 @@ document.addEventListener('DOMContentLoaded', function () {
            
             <nav class="mobile-menu-nav">
                 <ul class="mobile-menu-list"></ul>
-                
-            </nav>
-            <div class="header-button " style="text-align: center;">
+                <div class="header-button mt-3" style="text-align: center;">
                                     <a class="tj-primary-btn" href="https://drive.google.com/file/d/1wyqgv_Ymn7QLmqMN8PVORkxkQfEPvwnh/view?usp=drive_link">
                                         <span class="btn-text"><span>Download Catalogue</span></span>
                                         <span class="btn-icon"><i class="tji-arrow-right-2"></i></span>
                                     </a>
                                 </div>
+                
+            </nav>
+            
+            
            
         </div>
     </div>
@@ -125,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <li><a href="about.html">About Us</a></li>
 
     <li class="has-dropdown">
-        <a href="products.html">Products</a>
+        <a href="#">Products</a>
         <ul class="sub-menu">
             <li>
                 <a href="pp-corrugated-sheet.html">
@@ -146,9 +153,16 @@ document.addEventListener('DOMContentLoaded', function () {
 </ul>
                                 </nav>
                             </div>
-
+                           
+                            
+        <style>
+                    
+        </style>
                             <!-- header right info -->
                             <div class="header-right-item d-flex align-items-center justify-content-end">
+                            <div class="header-translate d-none d-lg-block">
+                                <div id="google_translate_element_sticky"></div>
+                            </div>
                                 <div class="header-button d-none d-lg-block">
                                     <a class="tj-primary-btn" href="https://drive.google.com/file/d/1wyqgv_Ymn7QLmqMN8PVORkxkQfEPvwnh/view?usp=drive_link">
                                         <span class="btn-text"><span> Catalogue</span></span>
