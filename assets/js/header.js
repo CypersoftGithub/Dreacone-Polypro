@@ -160,9 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </style>
                             <!-- header right info -->
                             <div class="header-right-item d-flex align-items-center justify-content-end">
-                            <div class="header-translate d-none d-lg-block">
-                                <div id="google_translate_element_sticky"></div>
-                            </div>
+                            
                                 <div class="header-button d-none d-lg-block">
                                     <a class="tj-primary-btn" href="https://drive.google.com/file/d/1wyqgv_Ymn7QLmqMN8PVORkxkQfEPvwnh/view?usp=drive_link">
                                         <span class="btn-text"><span> Catalogue</span></span>
