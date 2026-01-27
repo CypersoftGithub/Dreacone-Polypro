@@ -12193,6 +12193,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     background-color: var(--tj-color-theme-bg);
     text-align: center;
     border-radius: 10px;
+    height: 350px;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
@@ -14918,7 +14919,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     color: var(--tj-color-theme-dark);
 }
 
-/* Active state for sidebar category filter (used on pp-corrugated-sheet.html) */
+/* Active state for sidebar category filter (used on pp-corrugated-sheet) */
 .tj-sidebar-widget.widget-categories ul li a.is-active {
     color: var(--tj-color-theme-dark);
 }

@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="footer_widget_wrapper">
                             <div class="footer-widget footer-col-1">
                                 <div class="footer-logo">
-                                    <a href="index.html">
+                                    <a href="index">
                                         <img src="assets/images/logos/main-logo-2.png" alt="Dreacone – Polypro Industries Logo">
                                     </a>
                                 </div>
@@ -33,17 +33,17 @@ document.addEventListener('DOMContentLoaded', function () {
                             <div class="footer-widget widget-nav-menu">
                                 <h5 class="title">Quick Links</h5>
                                 <ul>
-                                    <li><a href="index.html"><span>Home</span></a></li>
-                                    <li><a href="about.html"><span>About Us</span></a></li>
-                                    <li><a href="export.html"><span>Export</span></a></li>
-                                    <li><a href="contact.html"><span>Contact</span></a></li>
+                                    <li><a href="index"><span>Home</span></a></li>
+                                    <li><a href="about"><span>About Us</span></a></li>
+                                    <li><a href="export"><span>Export</span></a></li>
+                                    <li><a href="contact"><span>Contact</span></a></li>
                                 </ul>
                             </div>
                             <div class="footer-widget widget-nav-menu">
                                 <h5 class="title">Products</h5>
                                 <ul>
-                                    <li><a href="pp-corrugated-sheet.html"><span>PP Corrugated Sheet</span></a></li>
-                                    <li><a href="pp-corrugated-box.html"><span>PP Corrugated Box</span></a></li>
+                                    <li><a href="pp-corrugated-sheet"><span>PP Corrugated Sheet</span></a></li>
+                                    <li><a href="pp-corrugated-box"><span>PP Corrugated Box</span></a></li>
                                 </ul>
                             </div>
 

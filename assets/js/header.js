@@ -16,36 +16,36 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="header-wrapper">
                             <!-- site logo -->
                             <div class="site_logo">
-                                <a class="logo" href="index.html"><img src="assets/images/logos/main-logo-2.png" alt="Logo"></a>
+                                <a class="logo" href="index"><img src="assets/images/logos/main-logo-2.png" alt="Logo"></a>
                             </div>
 
                             <!-- navigation -->
                             <div class="menu-area d-none d-lg-inline-flex align-items-center">
                                 <nav id="mobile-menu" class="mainmenu">
                                     <ul>
-    <li><a href="index.html">Home</a></li>
+    <li><a href="index">Home</a></li>
 
-    <li><a href="about.html">About Us</a></li>
+    <li><a href="about">About Us</a></li>
 
     <li class="has-dropdown">
         <a href="#">Products</a>
         <ul class="sub-menu">
             <li>
-                <a href="pp-corrugated-sheet.html">
+                <a href="pp-corrugated-sheet">
                     PP Corrugated Sheet
                 </a>
             </li>
             <li>
-                <a href="pp-corrugated-box.html">
+                <a href="pp-corrugated-box">
                     PP Corrugated Box
                 </a>
             </li>
         </ul>
     </li>
 
-    <li><a href="export.html">Export</a></li>
+    <li><a href="export">Export</a></li>
 
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact">Contact</a></li>
 </ul>
                                 </nav>
                             </div>
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="custom-mobile-menu-overlay" id="mobileMenuOverlay">
         <div class="custom-mobile-menu">
             <div class="mobile-menu-header">
-                <a href="index.html" class="mobile-menu-logo">
+                <a href="index" class="mobile-menu-logo">
                     <img src="assets/images/logos/main-logo-2.png" alt="Logo">
                 </a>
                 <button class="mobile-menu-close" aria-label="Close mobile menu">
@@ -120,36 +120,36 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="header-wrapper">
                             <!-- site logo -->
                             <div class="site_logo">
-                                <a class="logo" href="index.html"><img src="assets/images/logos/main-logo-2.png" alt="Logo"></a>
+                                <a class="logo" href="index"><img src="assets/images/logos/main-logo-2.png" alt="Logo"></a>
                             </div>
 
                             <!-- navigation -->
                             <div class="menu-area d-none d-lg-inline-flex align-items-center">
                                 <nav class="mainmenu">
                                    <ul>
-    <li><a href="index.html">Home</a></li>
+    <li><a href="index">Home</a></li>
 
-    <li><a href="about.html">About Us</a></li>
+    <li><a href="about">About Us</a></li>
 
     <li class="has-dropdown">
         <a href="#">Products</a>
         <ul class="sub-menu">
             <li>
-                <a href="pp-corrugated-sheet.html">
+                <a href="pp-corrugated-sheet">
                     PP Corrugated Sheet
                 </a>
             </li>
             <li>
-                <a href="pp-corrugated-box.html">
+                <a href="pp-corrugated-box">
                     PP Corrugated Box
                 </a>
             </li>
         </ul>
     </li>
 
-    <li><a href="export.html">Export</a></li>
+    <li><a href="export">Export</a></li>
 
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact">Contact</a></li>
 </ul>
                                 </nav>
                             </div>
