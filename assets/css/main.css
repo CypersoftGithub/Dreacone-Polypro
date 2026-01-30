@@ -1,12 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
-    Theme Name: Tekmino - Innovative IT Solution HTML Template
-    Author: Theme-Junction
-    Author URI: https://themeforest.net/user/theme-junction
-    Description: Tekmino - Innovative IT Solution HTML Template
-    Version: 1.0
-
------------------------------------------------------------------------------------
 
 
 /************ TABLE OF CONTENTS ***************
@@ -15319,6 +15311,38 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
     padding: 30px 17px 25px 18px;
     max-width: 280px;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-details-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #e63a34;
+    transition: height 0.4s ease;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.service-details-item:hover::before {
+    height: 100%;
+}
+
+.service-details-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-details-item .number,
+.service-details-item .title,
+.service-details-item .desc {
+    position: relative;
+    z-index: 1;
 }
 
 .service-details-item .number {

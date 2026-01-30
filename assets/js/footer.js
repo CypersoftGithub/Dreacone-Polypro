@@ -50,14 +50,12 @@ document.addEventListener('DOMContentLoaded', function () {
                             <div class="footer-widget widget-contact">
                                 <h5 class="title">Contact Info</h5>
                                 <div class="footer-contact-info">
-                                    <div class="contact-item">
-                                        <span>Ground Survey No.32 Paiki 1, Paiki 2,
-Dreacone Polypro Industries, Pipaliya
-Road, Lutavadar, Morbi, Gujarat-363660,india.</span>
-                                    </div>
+                                    
                                     <div class="contact-item">
                                         <a href="tel:7041099052">Phone: <br>Tejash Patel +91 70410 99052</a>
-                                        <a href="mailto:Dreaconepolypro@gmail.com">Email: <br> Dreaconepolypro@gmail.com</a>
+                                        <a href="mailto:info@dreaconepolypro.com">Email: <br> info@dreaconepolypro.com</a>
+                                        <a href="mailto:sales@dreaconepolypro.com"> sales@dreaconepolypro.com</a>
+                                        <a href="mailto:export@dreaconepolypro.com">export@dreaconepolypro.com</a>
                                     </div>
                                 </div>
                             </div>
